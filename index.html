@@ -7,5 +7,32 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Password Generator</h1>
+        <label for="length">Password Length:</label>
+        <input type="number" name="length" id="length" />
+      </div>
+      <div class="box">
+        <label for="upper">Use Uppercase </label>
+        <input type="checkbox" name="upper" id="upper" />
+      </div>
+      <div class="box">
+        <label for="numbers"> Include numbers</label>
+        <input type="checkbox" name="numbers" id="numbers" />
+      </div>
+      <div class="box">
+        <label for="symbols">Inlude symbols</label>
+        <input type="checkbox" name="symbols" id="symbols" />
+      </div>
+      <div>
+        <button id="generate">Generate</button>
+      </div>
+      <div id="generatedPassword">
+        <input type="text" name="password" id="password" readonly />
+        <button id="copy">Copy</button>
+      </div>
+    </div>
+  </body>
 </html>
