@@ -27,4 +27,12 @@ function generatePassword() {
   passwordBox.value = password;
 }
 
+function copyPassword() {
+  if (passwordBox.value) {
+    passwordBox.select();
+    document.execCommand("copy");
+    alert("Password Copied!");
+  }
+}
 generateButton.addEventListener("click", generatePassword);
+copyButton.addEventListener("click", copyPassword);
